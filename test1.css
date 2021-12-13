@@ -1,0 +1,74 @@
+h1 {
+          color: #364e96; /*文字色*/
+          padding: 5px 0; /*上下の余白*/
+          border-top: solid 6px #364e96; /*上線*/
+          border-bottom: solid 6px #364e96; /*下線*/
+        }
+        
+        
+            /* cssの場合はこの両サイドで囲まれた箇所がコメント文になります。 */
+            
+            
+                .text_a { color: red; } /* 文字を赤にする。classで指定 */
+    .text_b { color: blue; } /* 文字を青にする。classで指定 */
+    #text_c { color: green; } /* 文字を緑にする。idで指定 */
+    #text_d { color: orange; } /* 文字をオレンジにする。idで指定 */
+    .text_e { font-size: 26px; } /* 文字のサイズを26にする。classで指定 */
+    small { color: purple; } /* 文字を紫にする。タグで指定 */
+    
+    .font-a { font-family: sans-serif; }
+    .font-b { font-family: serif; }
+    .font-c { font-family: monospace; }
+    .font-d { font-family: fantasy; }
+    .font-e { font-family: cursive; }
+    .font-f { font-family: "メイリオ"; }
+    
+        .text1 { text-align: left; }
+    .text2 { text-align: right; }
+    .text3 { text-align: center; }
+    
+    
+      .parent_box1 {
+      background-color: gainsboro;
+      height: 150px;
+    }
+ 
+    .box1 {
+      background-color: cornflowerblue;
+      width: 300px;
+    }
+ 
+    .box2 {
+      background-color: crimson;
+      width: 100%;
+    }
+ 
+    .box3 {
+      background-color: darkorange;
+      width: auto;
+    }
+    
+    .parent_box2 {
+      background-color: gainsboro;
+      width: 600px;
+    }
+ 
+    .box4 {
+      background-color: cornflowerblue;
+      width: 100%;
+    }
+ 
+    .box5 {
+      background-color: crimson;
+      width: 75%;
+    }
+ 
+    .box6 {
+      background-color: darkorange;
+      width: 50%;
+    }
+ 
+    .box7 {
+      background-color: mediumseagreen;
+      width: 25%;
+    }
