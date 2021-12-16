@@ -1,0 +1,142 @@
+.block_sample {
+      background-color: pink;
+      border: 1px solid black;
+      width: 150px;
+      height: 150px;
+    }
+ 
+    .inline_sample {
+      background-color: pink;
+      border: 1px solid black;
+      width: 150px;
+      height: 150px;
+    }
+    
+    .block_sampleB {
+      display: inline;
+      background-color: pink;
+      border: 1px solid black;
+      width: 150px;
+      height: 150px;
+    }
+ 
+    .inline_sampleB {
+      display: block;
+      background-color: pink;
+      border: 1px solid black;
+      width: 150px;
+      height: 150px;
+    }
+    
+     .block_sampleC {
+      display: inline-block; /* ブロック要素をインラインブロック要素に変更 */
+      background-color: pink;
+      border: 1px solid black;
+      width: 150px;
+      height: 150px;
+    }
+ 
+    .inline_sampleC {
+      display: inline-block; /* インライン要素をインラインブロック要素に変更 */
+      background-color: pink;
+      border: 1px solid black;
+      width: 150px;
+      height: 150px;
+    }
+    
+ 
+    .hide {
+      display: none; /* 非表示にするプロパティ値を指定 */
+    }
+    
+    
+    .box {
+      width: 1000px;
+      padding: 15px;
+      /*border: 1px solid black;*/
+      margin-bottom: 20px;
+    }
+    
+    
+ 
+    .no_float1 {
+      background-color: pink;
+    }
+ 
+    .no_float2 {
+      background-color: skyblue;
+    }
+ 
+    .left1 {
+      background-color: pink;
+      float: left;
+    }
+ 
+    .left2 {
+      background-color: skyblue;
+      float: left;
+    }
+ 
+    .right1 {
+      background-color: pink;
+      float: right;
+    }
+ 
+    .right2 {
+      background-color: skyblue;
+      float: right;
+    }
+ 
+    .right3 {
+      background-color: orange;
+      float: right;
+    }
+ 
+    .clear {
+      clear: both;
+    }
+    
+       .left_a {
+      background-color: pink;
+      width: 150px;
+      height: 150px;
+      float: left;
+    }
+ 
+    .left_b {
+      background-color: skyblue;
+      width: 300px;
+      height: 300px;
+      float: left;
+    }
+    
+      /* floatを指定しないクラスに変更 */
+    .left_c {
+      background-color: skyblue;
+      width: 300px;
+      height: 300px;
+    }
+    
+    .clear {
+      clear: both;
+      /* bothで両方からの回り込みを解除する 他にleftで左、rightで右からの回り込みを解除できる*/
+    }
+    
+    .oya {
+      display: flex;
+    }
+ 
+    .ko_a {
+      background-color: pink;
+      padding: 15px;
+    }
+ 
+    .ko_b {
+      background-color: skyblue;
+      padding: 15px;
+    }
+ 
+    .ko_c {
+      background-color: orange;
+      padding: 15px;
+    }
