@@ -1,0 +1,94 @@
+.ContentRefund {
+  background-color: #F6F6F6;
+  margin-bottom: 70px;
+  padding: 20px
+}
+
+@media screen and (max-width:767px) {
+  .ContentRefund {
+    margin-right: calc(((100vw - 100%) / 2) * -1);
+    margin-left: calc(((100vw - 100%) / 2) * -1);
+    margin-bottom: 60px
+  }
+}
+
+.ContentRefund__lead {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 39px
+}
+
+@media screen and (max-width:767px) {
+  .ContentRefund__lead {
+    font-size: 21px;
+    margin-bottom: 7.5px;
+    line-height: 28px
+  }
+}
+
+.ContentRefundDetail {
+  align-items: center;
+  display: flex
+}
+
+@media screen and (max-width:767px) {
+  .ContentRefundDetail {
+    flex-wrap: wrap
+  }
+}
+
+.ContentRefundDetail__label {
+  background-color: #DFDFDF;
+  color: #777777;
+  font-size: 18px;
+  font-weight: 700;
+  height: 48px;
+  line-height: 48px;
+  margin-right: 15px;
+  padding: 0 15px;
+  text-align: center;
+  width: 121px;
+  word-break: keep-all
+}
+
+@media screen and (max-width:767px) {
+  .ContentRefundDetail__label {
+    font-size: 16px;
+    height: 29px;
+    line-height: 29px;
+    margin-right: 10px;
+    margin-bottom: 7.5px;
+    padding: 0;
+    width: 96px
+  }
+}
+
+.ContentRefundDetail__title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-right: 15px;
+  word-break: keep-all
+}
+
+@media screen and (max-width:767px) {
+  .ContentRefundDetail__title {
+    font-size: 25px;
+    line-height: 32px;
+    margin-right: 0;
+    margin-bottom: 7.5px
+  }
+}
+
+.ContentRefundDetail__caption {
+  color: #777777;
+  font-size: 14px;
+  line-height: 24px
+}
+
+.ContentRefundDetail__caption a {
+  color: #777777
+}
+
+
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sourceRoot%22%3A%22http%3A%2F%2Fpotepancamp.local%2F%22%2C%22sources%22%3A%5B%22wp-content%2Fthemes%2Fpotepancamp%2Fassets%2Fscss%2Fcontent-refund.scss%22%2C%22wp-content%2Fthemes%2Fpotepancamp%2Fassets%2Fscss%2F.%2F.%2F_set-device-width.scss%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAEA%2CeAAA%2CwDAAA%2CCCWE%2CoCAAA%2CeAAA%2C2GAAA%2CCAAA%2CCDAA%2CqBAAA%2C%2BCAAA%2CCCAA%2CoCAAA%2CqBAAA%2CmDAAA%2CCAAA%2CCDaF%2CqBAAA%2C%2BBAAA%2CCCbE%2CoCAAA%2CqBAAA%2CcAAA%2CCAAA%2CCDqBA%2C4BAAA%2CqLAAA%2CCCrBA%2CoCAAA%2C4BAAA%2CsGAAA%2CCAAA%2CCD6CA%2C4BAAA%2CqFAAA%2CCC7CA%2CoCAAA%2C4BAAA%2CkEAAA%2CCAAA%2CCD4DA%2C8BAAA%2C6CAAA%2CCAKE%2CgCAAA%2CaAAA%22%7D */

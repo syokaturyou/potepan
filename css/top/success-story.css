@@ -1,0 +1,305 @@
+.SuccessStoriesSection__number {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -90px auto 0 auto;
+  background-color: #fcfaf5;
+  border-radius: 50%;
+  color: #f79314;
+  font-weight: bold;
+  font-size: 40px
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStoriesSection__number {
+    font-size: 30px;
+    height: 80px;
+    margin-top: -70px;
+    width: 80px
+  }
+}
+
+.SuccessStoriesSection__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 28px;
+  margin-top: -20px;
+  letter-spacing: 1px
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStoriesSection__title {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: -10px
+  }
+}
+
+.SuccessStoriesSection__description {
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 26px;
+  margin-top: 15px
+}
+
+.SuccessStoriesSection__description strong {
+  color: #f79314;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  line-height: 1
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStoriesSection__description strong {
+    font-size: 24px
+  }
+}
+
+.SuccessStoriesSection__description--caption {
+  color: #A2A2A4;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 5px 0
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStoriesSection__description--caption {
+    text-align: left
+  }
+}
+
+.SuccessStoriesSection__caption {
+  color: #A2A2A4;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 5px 0
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStoriesSection__caption {
+    text-align: left
+  }
+}
+
+.SuccessStories {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 20px;
+  padding: 30px
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStories {
+    padding: 20px;
+    padding-top: 40px !important
+  }
+}
+
+.SuccessStories__title {
+  display: inline-block;
+  margin-bottom: 25px
+}
+
+.SuccessStories__title::after {
+  content: '';
+  border-bottom: solid 4px #F79214;
+  display: block;
+  margin-top: 10px
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStories__title::after {
+    margin-top: 5px
+  }
+}
+
+.SuccessStories__title>h4 {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 1;
+  vertical-align: middle
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStories__title>h4 {
+    font-size: 16px
+  }
+}
+
+.SuccessStories__title>img {
+  height: auto;
+  margin-left: 10px;
+  width: 34px
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStories__title>img {
+    margin-left: 5px;
+    width: 24px
+  }
+}
+
+.SuccessStories__sub-title {
+  font-size: 20px;
+  line-height: 28px
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStories__sub-title {
+    font-size: 16px;
+    line-height: 21px
+  }
+}
+
+.SuccessStories__sub-title>strong {
+  color: #F79214;
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  line-height: 39px
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStories__sub-title>strong {
+    font-size: 18px;
+    line-height: 26px
+  }
+}
+
+.SuccessStoriesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 32px 0 10px 0
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStoriesList {
+    margin: 14px 0 0 0
+  }
+}
+
+.SuccessStoriesList>li {
+  display: flex;
+  width: 33.3%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px
+}
+
+@media screen and (max-width:1080px) {
+  .SuccessStoriesList>li {
+    padding-left: 10px;
+    padding-right: 10px
+  }
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStoriesList>li {
+    margin-bottom: 24px;
+    width: 100%;
+    padding: 10px 5px
+  }
+}
+
+.SuccessStoriesList img {
+  width: 60px;
+  height: 60px
+}
+
+.SuccessStoriesList .last-line {
+  margin-bottom: 0
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStoriesList .last-line {
+    margin-bottom: 24px
+  }
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStoriesList {
+    flex-direction: column;
+    margin-top: 25px !important
+  }
+}
+
+.SuccessStoriesList__link {
+  cursor: pointer;
+  display: contents
+}
+
+.SuccessStoriesList__link:hover .SuccessStory__intro {
+  color: #F79214
+}
+
+.SuccessStoriesList__link:hover .SuccessStory__intro p {
+  color: #F79214
+}
+
+.SuccessStory {
+  align-items: center;
+  display: flex;
+  width: 33.3%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px
+}
+
+@media screen and (max-width:1080px) {
+  .SuccessStory {
+    padding-left: 10px;
+    padding-right: 10px
+  }
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStory {
+    align-items: center;
+    margin-bottom: 40px;
+    padding-right: 0;
+    width: 100%
+  }
+}
+
+.SuccessStory::after {
+  content: url(../images/common/chevron-right.jpg);
+  display: inline-block;
+  height: fit-content;
+  margin: auto;
+  transform: scale(0.4)
+}
+
+@media screen and (max-width:767px) {
+  .SuccessStory::after {
+    margin-right: 6px
+  }
+}
+
+.SuccessStory__image {
+  height: 60px;
+  width: 60px
+}
+
+.SuccessStory__intro {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 10px 16px;
+  text-align: left
+}
+
+.SuccessStory__intro p {
+  color: #000;
+  font-weight: 700
+}
+
+
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sourceRoot%22%3A%22http%3A%2F%2Fpotepancamp.local%2F%22%2C%22sources%22%3A%5B%22wp-content%2Fthemes%2Fpotepancamp%2Fassets%2Fscss%2Fsuccess-story.scss%22%2C%22wp-content%2Fthemes%2Fpotepancamp%2Fassets%2Fscss%2F.%2F.%2F_set-device-width.scss%22%2C%22wp-content%2Fthemes%2Fpotepancamp%2Fassets%2Fscss%2F.%2F_mixins.scss%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAGE%2C%2BBAAA%2CiMAAA%2CCCUA%2CoCAAA%2C%2BBAAA%2CsDAAA%2CCAAA%2CCDNA%2C8BAAA%2CmFAAA%2CCCMA%2CoCAAA%2C8BAAA%2CgDAAA%2CCAAA%2CCDFA%2CoCAAA%2C%2BFAAA%2CCEuVA%2C2CAAA%2CyFAAA%2CCDrVA%2CoCAAA%2C2CAAA%2CcAAA%2CCAAA%2CCDCE%2C6CAAA%2C0DAAA%2CCCDF%2CoCAAA%2C6CAAA%2CeAAA%2CCAAA%2CCDMA%2CgCAAA%2C0DAAA%2CCCNA%2CoCAAA%2CgCAAA%2CeAAA%2CCAAA%2CCDWF%2CgBAAA%2CgFAAA%2CCCXE%2CoCAAA%2CgBAAA%2CwCAAA%2CCAAA%2CCDuBA%2CuBAAA%2CuCAAA%2CCAIE%2C8BAAA%2CwEAAA%2CCC3BF%2CoCAAA%2C8BAAA%2CcAAA%2CCAAA%2CCDsCE%2C0BAAA%2CwFAAA%2CCCtCF%2CoCAAA%2C0BAAA%2CcAAA%2CCAAA%2CCDkDE%2C2BAAA%2CuCAAA%2CCClDF%2CoCAAA%2C2BAAA%2C0BAAA%2CCAAA%2CCD8DA%2C2BAAA%2C%2BBAAA%2CCC9DA%2CoCAAA%2C2BAAA%2C%2BBAAA%2CCAAA%2CCDuEE%2CkCAAA%2C4EAAA%2CCCvEF%2CoCAAA%2CkCAAA%2C%2BBAAA%2CCAAA%2CCDqFF%2CoBAAA%2C8EAAA%2CCCrFE%2CoCAAA%2CoBAAA%2CiBAAA%2CCAAA%2CCD%2BFA%2CuBAAA%2CgFAAA%2CCAOE%2CqCAAA%2CuBAAA%2CoCAAA%2CCAAA%2CCCtGF%2CoCAAA%2CuBAAA%2C8CAAA%2CCAAA%2CCDkHA%2CwBAAA%2CsBAAA%2CCAKA%2C%2BBAAA%2CeAAA%2CCCvHA%2CoCAAA%2C%2BBAAA%2CkBAAA%2CCAAA%2CCAAA%2CoCAAA%2CoBAAA%2CgDAAA%2CCAAA%2CCDoIA%2C0BAAA%2C%2BBAAA%2CCAKI%2CqDAAA%2CaAAA%2CCAGE%2CuDAAA%2CaAAA%2CCAQR%2CcAAA%2CmGAAA%2CCAQE%2CqCAAA%2CcAAA%2CoCAAA%2CCAAA%2CCC5JA%2CoCAAA%2CcAAA%2CgEAAA%2CCAAA%2CCDwKA%2CqBAAA%2CwHAAA%2CCCxKA%2CoCAAA%2CqBAAA%2CgBAAA%2CCAAA%2CCDoLA%2CqBAAA%2CsBAAA%2CCAKA%2CqBAAA%2C8FAAA%2CCAQE%2CuBAAA%2C0BAAA%22%7D */

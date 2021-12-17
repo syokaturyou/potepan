@@ -1,0 +1,343 @@
+.CourseListWrapper {
+  padding: 110px 0;
+  background-color: #F4F5F7
+}
+
+.CourseList {
+  max-width: 1140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative
+}
+
+@media screen and (max-width:767px) {
+  .CourseList {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px
+  }
+}
+
+.CourseList__title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  width: 100%;
+  position: relative
+}
+
+@media screen and (max-width:767px) {
+  .CourseList__title {
+    margin-bottom: 40px
+  }
+}
+
+.CourseList__title::after {
+  border-bottom: 6px solid #F79214;
+  content: '';
+  display: block;
+  margin-top: 20px;
+  width: 50px
+}
+
+.CourseList__title h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 74px
+}
+
+@media screen and (max-width:767px) {
+  .CourseList__title h2 {
+    font-size: 30px !important;
+    line-height: 1.2;
+    text-align: center
+  }
+}
+
+.CourseList__title h2 span {
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  font-weight: 900
+}
+
+@media screen and (max-width:767px) {
+  .CourseList__title h2 span {
+    font-size: 30px;
+    letter-spacing: 1px
+  }
+}
+
+.CourseList__title p {
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-top: 10px;
+  text-align: center
+}
+
+@media screen and (max-width:767px) {
+  .CourseList__title p {
+    font-size: 16px;
+    line-height: 21px
+  }
+}
+
+.CourseList__title br {
+  display: none
+}
+
+@media screen and (max-width:767px) {
+  .CourseList__title br {
+    display: block
+  }
+}
+
+.CourseList__title>img {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  width: 250px
+}
+
+@media screen and (max-width:767px) {
+  .CourseList__title>img {
+    top: -50px;
+    width: 180px
+  }
+}
+
+.CourseList__button {
+  align-items: center;
+  background-color: #F79214;
+  border: none;
+  border-radius: 38px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  height: 64px;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  margin: 60px auto 0;
+  width: 300px
+}
+
+.CourseList__button:visited {
+  color: #fff
+}
+
+.CourseList__button[disabled] {
+  background-color: #BBBBBB;
+  cursor: not-allowed
+}
+
+.CourseList__button.disabled {
+  background-color: #BBBBBB
+}
+
+.CourseList__button span:first-child {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px
+}
+
+.CourseList__button span:last-child {
+  font-size: 12px;
+  line-height: 18px
+}
+
+@media screen and (min-width:768px) {
+  .CourseList__button {
+    transition: opacity 0.2s
+  }
+  .CourseList__button:hover {
+    opacity: 0.8
+  }
+}
+
+.CourseListContainer {
+  background-color: #fff;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 40px
+}
+
+@media screen and (max-width:767px) {
+  .CourseListContainer {
+    font-size: 12px;
+    padding: 40px 20px
+  }
+}
+
+.CourseListItem {
+  margin-bottom: 45px
+}
+
+.CourseListItem__link {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 45px
+}
+
+@media screen and (max-width:767px) {
+  .CourseListItem__link {
+    flex-direction: column;
+    padding: 20px
+  }
+}
+
+.CourseNameSection {
+  align-items: center;
+  border: solid 3px;
+  border-image: linear-gradient(to right, #F79214 0%, #f74e06 100%);
+  border-image-slice: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 30px;
+  padding: 20px 0;
+  width: 30%
+}
+
+@media screen and (max-width:767px) {
+  .CourseNameSection {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0
+  }
+}
+
+.CourseNameSection__lead {
+  color: #F79214;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 7.5px
+}
+
+.CourseNameSection__title {
+  font-size: 24px;
+  text-align: center
+}
+
+.CourseContentSection {
+  position: relative;
+  width: calc(70% + 30px)
+}
+
+@media screen and (max-width:767px) {
+  .CourseContentSection {
+    margin-top: 25px;
+    padding-right: 0;
+    width: 100%
+  }
+}
+
+.CourseContentSection__description {
+  color: #F79214;
+  font-size: 22px;
+  line-height: 32px
+}
+
+.CourseContentSection__link {
+  color: #999;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  right: 20px;
+  bottom: -5px
+}
+
+@media screen and (min-width:768px) {
+  .CourseContentSection__link {
+    transition: 0.2s
+  }
+  .CourseContentSection__link:hover {
+    color: #F79214
+  }
+}
+
+@media screen and (max-width:767px) {
+  .CourseContentSection__link {
+    margin-top: 25px;
+    padding-right: 20px;
+    position: static;
+    text-align: right
+  }
+}
+
+.CourseContentSection__link::after {
+  content: url(../images/common/chevron-right.jpg);
+  display: inline-block;
+  height: 8px;
+  margin: auto;
+  position: absolute;
+  bottom: 10px;
+  right: -14px;
+  transform: scale(0.4);
+  width: 8px
+}
+
+@media screen and (max-width:767px) {
+  .CourseContentSection__link::after {
+    right: 0
+  }
+}
+
+.CourseDescriptionList {
+  align-items: center;
+  display: flex;
+  margin-top: 20px
+}
+
+@media screen and (max-width:767px) {
+  .CourseDescriptionList {
+    margin-top: 25px
+  }
+}
+
+.CourseDescriptionList--price {
+  align-items: baseline
+}
+
+.CourseDescriptionList__dt {
+  background: linear-gradient(90deg, #212121, #444);
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 15px;
+  padding: 10px 15px
+}
+
+@media screen and (max-width:767px) {
+  .CourseDescriptionList__dt {
+    word-break: keep-all
+  }
+}
+
+.CourseDescriptionList__dd {
+  font-size: 18px
+}
+
+.CourseDescriptionList__dd>span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px
+}
+
+
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sourceRoot%22%3A%22http%3A%2F%2Fpotepancamp.local%2F%22%2C%22sources%22%3A%5B%22wp-content%2Fthemes%2Fpotepancamp%2Fassets%2Fscss%2Fcourse-list.scss%22%2C%22wp-content%2Fthemes%2Fpotepancamp%2Fassets%2Fscss%2F.%2F.%2F_set-device-width.scss%22%2C%22wp-content%2Fthemes%2Fpotepancamp%2Fassets%2Fscss%2F.%2F_mixins.scss%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAEA%2CmBAAA%2CwCAAA%2CCAMA%2CYAAA%2C0GAAA%2CCCKE%2CoCAAA%2CYAAA%2CmDAAA%2CCAAA%2CCDFA%2CmBAAA%2CqGAAA%2CCCEA%2CoCAAA%2CmBAAA%2CkBAAA%2CCAAA%2CCC2GA%2C0BAAA%2CmFAAA%2CCAQA%2CsBAAA%2C%2BCAAA%2CCDnHA%2CoCAAA%2CsBAAA%2C2DAAA%2CCAAA%2CCC8HE%2C2BAAA%2C6DAAA%2CCD9HF%2CoCAAA%2C2BAAA%2CiCAAA%2CCAAA%2CCC0IA%2CqBAAA%2CsGAAA%2CCD1IA%2CoCAAA%2CqBAAA%2C%2BBAAA%2CCAAA%2CCDGE%2CsBAAA%2CYAAA%2CCCHF%2CoCAAA%2CsBAAA%2CaAAA%2CCAAA%2CCDOE%2CuBAAA%2C%2BCAAA%2CCCPF%2CoCAAA%2CuBAAA%2CqBAAA%2CCAAA%2CCDoBA%2CoBAAA%2C0RAAA%2CCEuJA%2C4BAAA%2CUAAA%2CCAIA%2C8BAAA%2C2CAAA%2CCAKA%2C6BAAA%2CwBAAA%2CCAKE%2CqCAAA%2C8EAAA%2CCAOA%2CoCAAA%2C%2BBAAA%2CCAQF%2CoCAAA%2CoBAAA%2CuBAAA%2CCAGE%2C0BAAA%2CWAAA%2CCAAA%2CCF9KJ%2CqBAAA%2CoFAAA%2CCC7BE%2CoCAAA%2CqBAAA%2CgCAAA%2CCAAA%2CCD0CF%2CgBAAA%2CkBAAA%2CCAGE%2CsBAAA%2C8FAAA%2CCC7CA%2CoCAAA%2CsBAAA%2CkCAAA%2CCAAA%2CCD2DF%2CmBAAA%2C8NAAA%2CCC3DE%2CoCAAA%2CmBAAA%2CuCAAA%2CCAAA%2CCD6EA%2CyBAAA%2CgEAAA%2CCAOA%2C0BAAA%2CgCAAA%2CCAMF%2CsBAAA%2CwCAAA%2CCC1FE%2CoCAAA%2CsBAAA%2C0CAAA%2CCAAA%2CCDoGA%2CmCAAA%2C6CAAA%2CCAMA%2C4BAAA%2CkFAAA%2CCE%2BGA%2CoCAAA%2C4BAAA%2CeAAA%2CCAGE%2CkCAAA%2CaAAA%2CCAAA%2CCD5NF%2CoCAAA%2C4BAAA%2CmEAAA%2CCAAA%2CCD2HE%2CmCAAA%2CoKAAA%2CCC3HF%2CoCAAA%2CmCAAA%2COAAA%2CCAAA%2CCD6IF%2CuBAAA%2C%2BCAAA%2CCC7IE%2CoCAAA%2CuBAAA%2CeAAA%2CCAAA%2CCDsJA%2C8BAAA%2CoBAAA%2CCAIA%2C2BAAA%2CoLAAA%2CCC1JA%2CoCAAA%2C2BAAA%2CmBAAA%2CCAAA%2CCD0KA%2C2BAAA%2CcAAA%2CCAGE%2CgCAAA%2C%2BCAAA%22%7D */
