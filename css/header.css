@@ -103,7 +103,8 @@
   line-height:32px
 }
 .HeaderNavListItem__button span:last-child{
-  font-size:12px;line-height:18px
+  font-size:12px;
+  line-height:18px
 }
 
 .HeaderNavListItem__button--recruit{
