@@ -125,7 +125,6 @@
 
 @media screen and (max-width:767px) {
   .FirstView {
-    /*background-image: none;*/
     background-image: url(../images/top-hero-sp.png);
     padding-top: 0;
     padding-bottom: 35px
