@@ -1,0 +1,30 @@
+body,div,p,ul,ol,li,dl,dt,dd,table,th,td,img,figure,h1,h2,h3,h4,h5,h6,form,select{
+	margin:0;
+	padding:0
+}html{
+	-webkit-text-size-adjust:100%
+}
+	body{
+		-webkit-font-smoothing:antialiased
+	}ul,ol{
+		list-style:none
+	}img{
+		border:0;
+		vertical-align:middle
+	}svg,input,select,textarea,label{
+		vertical-align:middle
+	}table{
+		border-collapse:collapse
+	}*,*::before,*::after{
+		word-break:break-all;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box
+	}pre{
+		white-space:pre-wrap
+	}address{
+		font-style:normal
+	}p{
+		line-height:1.5
+	}/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sourceRoot%22%3A%22http%3A%2F%2Fpotepancamp.local%2F%22%2C%22sources%22%3A%5B%22wp-content%2Fthemes%2Fpotepancamp%2Fassets%2Fscss%2Freset.scss%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AACA%2CkFAAA%2CkBAAA%2CCA0BA%2CKAAA%2C6BAAA%2CCAIA%2CKAAA%2CkCAAA%2CCAKA%2CMAAA%2CeAAA%2CCAMA%2CIAAA%2C8BAAA%2CCAMA%2CgCAAA%2CqBAAA%2CCASA%2CMAAA%2CwBAAA%2CCAKA%2CqBAAA%2CmGAAA%2CCASA%2CIAAA%2CoBAAA%2CCAIA%2CQAAA%2CiBAAA%2CCAIA%2CEAAA%2CeAAA%22%7D */
+	
