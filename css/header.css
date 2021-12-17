@@ -15,43 +15,36 @@
   max-width:100%;
   position:relative
 }
-.HeaderContainer>*:last-child{
+.HeaderContainer>:last-child{
   display:inline-flex
 }
-
 .HeaderLogo__image--pc{
   display:block;
   height:20px;
   width:auto
 }
-
 .HeaderLogo__image--sp{
   display:none;
   height:16px;
   width:auto
 }
-
 .HeaderNavList{
   align-items:center;
   display:flex;
   justify-content:space-between
 }
-
 .HeaderNavListItem{
   margin-right:45px
 }
-
 .HeaderNavListItem:last-of-type{
   margin-right:0
 }
-
 .HeaderNavListItem--recruit{
   margin-right:72px
 }
 .HeaderNavListItem__link{
   display:block
 }
-
 .HeaderNavListItem__link.current{
   color:#F79214
 }.HeaderNavListItem__link>span{
@@ -62,11 +55,9 @@
 .HeaderNavListItem__link>span:first-child{
   font-family:'Lato', sans-serif
 }
-
 .HeaderNavListItem__link>span:last-child{
   font-size:10px
 }
-
 .HeaderNavListItem__button{
   align-items:center;
   background-color:#F79214;
@@ -106,7 +97,6 @@
   font-size:12px;
   line-height:18px
 }
-
 .HeaderNavListItem__button--recruit{
   margin-right:0;
   padding:0 !important;
@@ -256,4 +246,5 @@
     transform:translate(0, -50%) rotate(-45deg);
     opacity:1
   }
-}/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sourceRoot%22%3A%22http%3A%2F%2Fpotepancamp.local%2F%22%2C%22sources%22%3A%5B%22wp-content%2Fthemes%2Fpotepancamp%2Fassets%2Fscss%2Fheader.scss%22%2C%22wp-content%2Fthemes%2Fpotepancamp%2Fassets%2Fscss%2F.%2F.%2F_set-device-width.scss%22%2C%22wp-content%2Fthemes%2Fpotepancamp%2Fassets%2Fscss%2F.%2F_mixins.scss%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAEA%2CQAAA%2C%2BCAAA%2CCAKE%2CiBAAA%2CsDAAA%2CCCAA%2CqCAAA%2CiBAAA%2C8DAAA%2CCAAA%2CCAAA%2CqCAAA%2CQAAA%2C%2BCAAA%2CCAAA%2CCAMA%2CoCAAA%2CQAAA%2CoCAAA%2CCAAA%2CCDiBF%2CiBAAA%2CgGAAA%2CCCjBE%2CoCAAA%2CiBAAA%2C4BAAA%2CCAAA%2CCD6BA%2C8BAAA%2CmBAAA%2CCE2KA%2CoCAAA%2CYAAA%2CuBAAA%2CCAGE%2CkBAAA%2CWAAA%2CCAAA%2CCFrKA%2CuBAAA%2CoCAAA%2CCCtCF%2CoCAAA%2CuBAAA%2CYAAA%2CCAAA%2CCD6CE%2CuBAAA%2CmCAAA%2CCC7CF%2CoCAAA%2CuBAAA%2CaAAA%2CCAAA%2CCDsDF%2CeAAA%2C6DAAA%2CCC5DE%2CqCAAA%2CeAAA%2CuOAAA%2CCAAA%2CCAMA%2CoCAAA%2CeAAA%2CQAAA%2CCAAA%2CCANA%2CqCAAA%2CyBAAA%2CkCAAA%2CCAAA%2CCAAA%2CqCAAA%2CyBAAA%2CiBAAA%2CCAAA%2CCAMA%2CoCAAA%2CyBAAA%2CiBAAA%2CCAAA%2CCDkGF%2CmBAAA%2CiBAAA%2CCEsGE%2CoCAAA%2CmBAAA%2CuBAAA%2CCAGE%2CyBAAA%2CWAAA%2CCAAA%2CCDjNF%2CqCAAA%2CmBAAA%2CcAAA%2CCAAA%2CCDiHA%2CgCAAA%2CcAAA%2CCCjHA%2CqCAAA%2CgCAAA%2CeAAA%2CCAAA%2CCDyHA%2C4BAAA%2CiBAAA%2CCAIA%2CyBAAA%2CaAAA%2CCC7HA%2CqCAAA%2CyBAAA%2CcAAA%2CCAAA%2CCDoIE%2CiCAAA%2CaAAA%2CCAIA%2C8BAAA%2C%2BCAAA%2CCAKE%2C0CAAA%2C8BAAA%2CCC7IJ%2CqCAAA%2C0CAAA%2C4CAAA%2CCAAA%2CCDuJI%2CyCAAA%2CcAAA%2CCCvJJ%2CqCAAA%2CyCAAA%2C%2BDAAA%2CCAAA%2CCDoKA%2C2BAAA%2CqSAAA%2CCEaA%2CmCAAA%2CUAAA%2CCAIA%2CqCAAA%2C2CAAA%2CCAKA%2CoCAAA%2CwBAAA%2CCAKE%2C4CAAA%2C8EAAA%2CCAOA%2C2CAAA%2C%2BBAAA%2CCAQF%2CoCAAA%2C2BAAA%2CuBAAA%2CCAGE%2CiCAAA%2CWAAA%2CCAAA%2CCDjNF%2CqCAAA%2C2BAAA%2CoDAAA%2CCAAA%2CCDmLE%2CoCAAA%2C%2BCAAA%2CCAQJ%2CoBAAA%2CYAAA%2CCC3LE%2CqCAAA%2CoBAAA%2CiFAAA%2CCAAA%2CCAAA%2CqCAAA%2C0BAAA%2CqLAAA%2CCAAA%2CCAAA%2CqCAAA%2CsCAAA%2CKAAA%2CCAAA%2CCAAA%2CqCAAA%2CqCAAA%2CQAAA%2CCAAA%2CCAAA%2CqCAAA%2CqCAAA%2CyDAAA%2CCAAA%2CCAAA%2CqCAAA%2CiDAAA%2C4DAAA%2CCAAA%2CCAAA%2CqCAAA%2CgDAAA%2C6DAAA%2CCAAA%22%7D */
+}
+
