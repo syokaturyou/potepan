@@ -3,7 +3,6 @@
   background-color: #F79214;
   padding: 45px 0
 }
-
 .About {
   max-width: 1140px;
   padding-left: 50px;
@@ -15,7 +14,6 @@
   display: flex;
   justify-content: space-between
 }
-
 .About__title {
   align-items: center;
   display: flex;
@@ -26,39 +24,16 @@
   margin-bottom: 0;
   width: 53%
 }
-
-.About__title::after {
-  border-bottom: 6px solid #F79214;
-  content: '';
-  display: block;
-  margin-top: 20px;
-  width: 50px
-}
-
 .About__title h2 {
   font-size: 46px;
   font-weight: 700;
   line-height: 74px
 }
-
-.About__title h2 {
-  font-size: 40px;
-  letter-spacing: 1px;
-  width: 100%
-}
-
 .About__title h2 span {
   font-family: 'Lato', sans-serif;
   font-size: 50px;
   font-weight: 900
 }
-
-.About__title h2>span {
-  font-size: 50px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 900
-}
-
 .About__title p {
   display: inline-block;
   font-size: 19px;
@@ -67,31 +42,19 @@
   margin-top: 10px;
   text-align: center
 }
-
-.About__title p {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 26px;
-  margin-top: 15px
-}
-
 .About__title::after {
   display: none
 }
-
 .About__title h2, .About__title p {
   color: #fff;
   text-align: left
 }
-
 .About__title br {
   display: none
 }
-
 .About__button {
   width: 250px
 }
-
 .About__button a {
   align-items: center;
   background-color: #F79214;
@@ -111,27 +74,12 @@
   color: #F79214 !important;
   background-color: #fff
 }
-
-.About__button a:visited {
-  color: #fff
-}
-
-.About__button a[disabled] {
-  background-color: #BBBBBB;
-  cursor: not-allowed
-}
-
-.About__button a.disabled {
-  background-color: #BBBBBB
-}
-
 .About__button a span:first-child {
   font-family: 'Lato', sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px
 }
-
 .About__button a span:last-child {
   font-size: 12px;
   line-height: 18px
@@ -149,9 +97,6 @@
   .About__title h2 {
     font-size: 30px !important;
     text-align: center
-  }
-  .About__title h2>span {
-    font-size: 33px
   }
   .About__title br {
     display: block

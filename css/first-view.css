@@ -5,15 +5,12 @@
   padding-top: 100px;
   padding-bottom: 28px
 }
-
 .FirstView__main-image {
   width: 100%
 }
-
 .FirstView__main-image--sp {
   display: none
 }
-
 .FirstView__container {
   max-width: 1140px;
   padding-left: 50px;
@@ -22,12 +19,10 @@
   margin-right: auto;
   position: relative
 }
-
 .FirstViewContent {
   margin-bottom: 70px;
   width: fit-content
 }
-
 .FirstViewContent__title {
   color: #000;
   font-family: 'Lato', sans-serif;
@@ -37,27 +32,21 @@
   margin-bottom: 15px;
   text-align: center
 }
-
 .FirstViewContent__images {
   margin-bottom: 25px
 }
-
 .FirstViewContent__images img {
   margin-right: 8px
 }
-
 .FirstViewContent__images img:nth-of-type(2) {
   width: 40%
 }
-
 .FirstViewContent__images img:last-of-type {
   margin-right: 0
 }
-
 .FirstViewContent__buttons {
   display: flex
 }
-
 .FirstViewContent__buttons a {
   align-items: center;
   background-color: #F79214;
@@ -76,49 +65,40 @@
   width: 100%;
   height: 64px
 }
-
 .FirstViewContent__buttons a:visited {
   color: #fff
 }
-
 .FirstViewContent__buttons a[disabled] {
   background-color: #BBBBBB;
   cursor: not-allowed
 }
-
 .FirstViewContent__buttons a.disabled {
   background-color: #BBBBBB
 }
-
 .FirstViewContent__buttons a span:first-child {
   font-family: 'Lato', sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px
 }
-
 .FirstViewContent__buttons a span:last-child {
   font-size: 12px;
   line-height: 18px
 }
-
 .FirstViewContent__buttons a:first-of-type {
   margin-right: 15px;
   width: 306px
 }
-
 .FirstViewContent__buttons a:last-of-type {
   background-color: #fff;
   border: 1px solid #E0E0E0;
   color: #000;
   width: 176px
 }
-
 .FirstViewCaption {
   color: #A2A2A4;
   font-size: 12px
 }
-
 .FirstViewCaption a {
   color: #A2A2A4
 }
@@ -129,65 +109,53 @@
     padding-top: 0;
     padding-bottom: 35px
   }
-
   .FirstView__main-image--sp {
     display: block
   }
-
   .FirstView__container {
     max-width: none;
     padding-left: 20px;
     padding-right: 20px
   }
-
   .FirstView__container {
     margin-top: -45vw
   }
-
   .FirstViewContent {
     margin-bottom: 20px;
     width: 100%
   }
-
   .FirstViewContent__title {
     font-size: 25px;
     line-height: 36px;
     margin-left: calc(((100vw - 100%) / 2) * -1);
     margin-right: calc(((100vw - 100%) / 2) * -1)
   }
-
   .FirstViewContent__images {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
     width: 100%
   }
-
   .FirstViewContent__images img {
     width: 27.5%
   }
-
   .FirstViewContent__buttons {
     flex-direction: column
   }
-
   .FirstViewContent__buttons a {
     transition: opacity 0.2s
   }
   .FirstViewContent__buttons a:hover {
     opacity: 0.8
   }
-
   .FirstViewContent__buttons a {
     font-size: 14px;
     width: 100% !important
   }
-
   .FirstViewContent__buttons a:first-of-type {
     margin-right: 0;
     margin-bottom: 10px
   }
-
   .FirstViewContent__buttons a:last-of-type {
     height: 45px
   }
