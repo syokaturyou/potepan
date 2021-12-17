@@ -124,6 +124,7 @@
     
     .oya {
       display: flex;
+      margin-bottom: 20px;
     }
  
     .ko_a {
@@ -138,5 +139,63 @@
  
     .ko_c {
       background-color: orange;
+      padding: 15px;
+    }
+    
+    
+     .oya_b {
+      display: flex;
+      margin-bottom: 20px;
+      width: 600px;
+    }
+ 
+    .ko_d {
+      background-color: pink;
+      padding: 15px;
+    }
+ 
+    .ko_e {
+      background-color: skyblue;
+      padding: 15px;
+    }
+ 
+    .ko_f {
+      background-color: orange;
+      padding: 15px;
+    }
+ 
+    .ko_g {
+      background-color: pink;
+      flex: auto;
+      padding: 15px;
+    }
+ 
+    .ko_h {
+      background-color: skyblue;
+      flex: auto;
+      padding: 15px;
+    }
+ 
+    .ko_i {
+      background-color: orange;
+      flex: auto;
+      padding: 15px;
+    }
+ 
+    .ko_j {
+      background-color: pink;
+      flex: 1;
+      padding: 15px;
+    }
+ 
+    .ko_k {
+      background-color: skyblue;
+      flex: 3;
+      padding: 15px;
+    }
+ 
+    .ko_l {
+      background-color: orange;
+      flex: 2;
       padding: 15px;
     }
