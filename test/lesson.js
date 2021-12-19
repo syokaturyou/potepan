@@ -27,3 +27,12 @@ console.log(message + "佐藤javascriptさん");
 console.log(message + "html鈴木さん");
     
     
+let number1 = 100 + 200;
+let number2 = 400;
+let number3 = 600;
+ 
+let sumNumber = number2 + number3; //変数と変数も足すことができる
+
+console.log(number1);
+console.log(sumNumber);
+    
