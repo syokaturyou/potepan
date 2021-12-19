@@ -16,23 +16,73 @@
 // console.log(message);
 // console.log(message);
 
-let name = "ポテパン太郎";
-console.log("こんにちは！" + name + "さん");
-console.log(name + "さんの注文履歴はこちらです");
-console.log(name + "さんにおすすめの商品はこちらです");
+// let name = "ポテパン太郎";
+// console.log("こんにちは！" + name + "さん");
+// console.log(name + "さんの注文履歴はこちらです");
+// console.log(name + "さんにおすすめの商品はこちらです");
     
-let message = "こんにちは！";
-console.log(message + "ポテパン太郎さん");
-console.log(message + "佐藤javascriptさん");
-console.log(message + "html鈴木さん");
+// let message = "こんにちは！";
+// console.log(message + "ポテパン太郎さん");
+// console.log(message + "佐藤javascriptさん");
+// console.log(message + "html鈴木さん");
     
     
-let number1 = 100 + 200;
-let number2 = 400;
-let number3 = 600;
+// let number1 = 100 + 200;
+// let number2 = 400;
+// let number3 = 600;
  
-let sumNumber = number2 + number3; //変数と変数も足すことができる
+// let sumNumber = number2 + number3; //変数と変数も足すことができる
 
-console.log(number1);
-console.log(sumNumber);
+// console.log(number1);
+// console.log(sumNumber);
+
+// let text1 = "文章で" + "書かれています"; //文字どうし
+// let text2 = "500" + "500"; //数字の文字どうし
+// let text3 = 100 + "文字"; //数値と文字
+// let text4 = text3 + "の" + text1; //変数を含めた足し算
+ 
+// console.log(text1);
+// console.log(text2);
+// console.log(text3);
+// console.log(text4);
+
+// let number = 300 - 200;
+ 
+// console.log(number);
+
+// let number = 100 * 5;
+ 
+// console.log(number);
+
+// let number = 800 / 4;
+ 
+// console.log(number);
+
+// let number = 10 % 3;
+ 
+// console.log(number);
+    
+// let number1 = 13 / 5; //答えは2.6となります。
+// let number2 = 13 % 5; //答えは2あまり3となります。
+ 
+// console.log(number1);
+// console.log(number2);
+
+
+let message1 = "プログラミングは肩が凝る確率";
+let message2 = 80%;
+ 
+console.log(message1);
+console.log(message2);
+
+// let number1 = 300;
+// number1 += 200; //ここで300を200に変更するのではなく200を足すということができる
+ 
+// console.log(number1);
+ 
+// let number2 = 500;
+// number2 -= 100; //ここで500を100に変更するのではなく100で引くということができる
+ 
+// console.log(number1);
+// console.log(number2);
     
