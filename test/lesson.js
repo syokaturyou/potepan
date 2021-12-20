@@ -68,12 +68,11 @@
 // console.log(number1);
 // console.log(number2);
 
-
-let message1 = "プログラミングは肩が凝る確率";
-let message2 = 80%;
+// let message1 = "プログラミングは肩が凝る確率";
+// let message2 = 80 + "%";
  
-console.log(message1);
-console.log(message2);
+// console.log(message1);
+// console.log(message2);
 
 // let number1 = 300;
 // number1 += 200; //ここで300を200に変更するのではなく200を足すということができる
@@ -86,3 +85,83 @@ console.log(message2);
 // console.log(number1);
 // console.log(number2);
     
+
+//数値型の100と文字列型の100は値とデータの型が同じですよねの意味
+    // if ( 100 === "100" ) {
+    //   console.log("式の結果はtrueです");
+    // } else {
+    //   console.log("式の結果はfalseです");
+    // }
+    
+//   //数値型の100と文字列型の100は値とデータの型が同じではないですよね（間違っていますよね）の意味
+//     if ( 100 !== "100" ) {
+//       console.log("式の結果はtrueです");
+//     } else {
+//       console.log("式の結果はfalseです");
+//     }
+
+// let number = 100;
+ 
+//     if (number > 200) {
+//       console.log("numberは200より大きいです。");
+//     } else if(number > 50) {
+//       console.log("numberは50より大きいです。");
+//     } else {
+//       console.log("numberは50より小さいです。");
+//     }
+
+
+//   let number = 300;
+ 
+//     if (number > 80) { //この式はtrueとなる
+//       console.log("numberは80より大きいです。");
+//     } else if (number > 50) { //判定結果はtrueとなるが、その前の条件分岐（if(number > 80)）で既に判定がtrueとなっているため、処理は実行されない
+//       console.log("numberは50より大きいです。");
+//     } else {
+//       console.log("numberは50より小さいです。");
+//     }
+
+// let gender = "男";
+//     let age = 20;
+ 
+//     if (gender === "男") {
+//       if (age >= 20) {
+//         console.log("20歳以上の男性です");
+//       }
+//     }
+
+//   let gender = "男";
+//     let age = 20;
+ 
+//     if (gender === "男") {
+//       if (age >= 20) {
+//         console.log("20歳以上の男性です");
+//       }
+//     }
+    
+    // let gender = "男";
+    // let age = 20;
+ 
+    // if (gender === "男" && age >= 20) {
+    //   console.log("20歳以上の男性です");
+    // }
+    
+  let number1 = 100;
+    let number2 = "100";
+    let boolean_flag = false;
+    
+    if (number1 > 100) {
+        number1 = 200;
+    } else if (number1 !== number2) {
+        boolean_flag = true;
+        number1 += 300;
+    } else {
+        boolean_flag = true;
+        number1 = 300;
+    }
+    
+    if (number1 >= 400 && boolean_flag) {
+        console.log("出力結果A");
+    } else {
+        console.log("出力結果B");
+    }
