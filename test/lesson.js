@@ -146,22 +146,74 @@
     //   console.log("20歳以上の男性です");
     // }
     
-  let number1 = 100;
-    let number2 = "100";
-    let boolean_flag = false;
+//   let number1 = 100;
+//     let number2 = "100";
+//     let boolean_flag = false;
     
-    if (number1 > 100) {
-        number1 = 200;
-    } else if (number1 !== number2) {
-        boolean_flag = true;
-        number1 += 300;
-    } else {
-        boolean_flag = true;
-        number1 = 300;
-    }
+//     if (number1 > 100) {
+//         number1 = 200;
+//     } else if (number1 !== number2) {
+//         boolean_flag = true;
+//         number1 += 300;
+//     } else {
+//         boolean_flag = true;
+//         number1 = 300;
+//     }
     
-    if (number1 >= 400 && boolean_flag) {
-        console.log("出力結果A");
-    } else {
-        console.log("出力結果B");
+//     if (number1 >= 400 && boolean_flag) {
+//         console.log("出力結果A");
+//     } else {
+//         console.log("出力結果B");
+//     }
+
+//  for (let i = 0; i < 10; i++) { //i++はカウンタ変数に「1」を足す場合の特殊記法
+//       console.log("この表示を10回出力したい"); //この箇所が繰り返し実行される
+//     }
+
+//   for (let i = 0; i < 10; i++) {
+//       console.log("ただいまは" + i + "回目の処理です");
+//       //文字列型と数値型（変数iには数値が代入されている）は全て文字列として結合されましたね。
+//     }
+//     console.log("処理が終了しました");
+    
+    //     for (let i = 0; i <= 20; i++) {
+    //   if (i % 2 == 0){
+    //     console.log(i);
+    //   }
+    // }
+    
+    // let output_count = 1; //カウンタ変数とは別に出力数をカウントする変数を用意
+    // for (let i = 0; i <= 20; i++) {
+    //   if (i % 2 == 0) {
+    //     console.log(i);
+    //     console.log("出力回数は" + output_count + "回目です"); //出力した数を確認する
+        
+    //     if (output_count >= 5) { //コンソールに５つ分出力してはじめてここの処理を通る
+    //       console.log("処理を抜けます");
+    //       break; //breakによってfor分の繰り返しを抜け、for分の外の処理に移る
+    //     }
+ 
+    //     output_count++; //出力回数が5になるまでカウントアップする
+    //   }
+    // }
+    // console.log("処理が終了しました");
+    
+    
+    // let i = 0;
+    // while (i <= 20) {
+    //   if (i % 2 == 0) {
+    //     console.log(i);
+    //   }
+    //   i++;
+    // }
+    
+    //   let i = 0;
+    // while (i <= 20) {
+    //   console.log("カウンタ変数が" + i + "のままで終わらない！");
+    //   //while文の中にカウンタ変数がない！！
+    // }
+    
+     for (let i = 0; 0 < 10; i++){
+      console.log("どうしてカウンタ変数が" + i "に戻るの？");
+      i--; //カウンタ変数を１引く
     }
