@@ -213,7 +213,32 @@
     //   //while文の中にカウンタ変数がない！！
     // }
     
-     for (let i = 0; 0 < 10; i++){
-      console.log("どうしてカウンタ変数が" + i "に戻るの？");
-      i--; //カウンタ変数を１引く
+    // for (let i = 0; 0 < 10; i++){
+    //   console.log("どうしてカウンタ変数が" + i　+ "に戻るの？");
+    //   i--; //カウンタ変数を１引く
+    // }
+    
+    //   function sumSelectNumber(number1, number2) {
+    //   let resultSum = 0;
+    //   resultSum = number1 + number2;
+    //   return resultSum;
+    // }
+    
+    //   function sumSelectNumber(number1, number2) {
+    //   let resultSum = 0;
+    //   resultSum = number1 + number2;
+    //   return resultSum;
+    // }
+    // // console.log(resultSum);
+ 
+    // //関数名とその引数に100と200を指定している
+    // let result = sumSelectNumber(50, 600);
+    // console.log(result);
+    
+    
+      function sumSelectNumber(number1, number2) {
+      let resultSum = 0;
+      resultSum = number1 + number2;
+      return resultSum;
+      console.log("関数の処理が終了しました"); //この行を追加しました
     }
