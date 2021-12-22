@@ -236,9 +236,33 @@
     // console.log(result);
     
     
-      function sumSelectNumber(number1, number2) {
-      let resultSum = 0;
-      resultSum = number1 + number2;
-      return resultSum;
-      console.log("関数の処理が終了しました"); //この行を追加しました
-    }
+    //   function sumSelectNumber(number1, number2) {
+    //   let resultSum = 0;
+    //   resultSum = number1 + number2;
+    //   console.log("関数の処理が終了しました"); //この行を追加しました
+    //   return resultSum;
+    // }
+    
+    //   function sumSelectNumber() {
+    //   console.log("関数の処理に入りました");
+    //   console.log("この関数にはreturnがありません");
+    //   console.log("関数の処理が終了しました");
+    // }
+ 
+    // sumSelectNumber(); //関数で引数がないため引数なしで呼び出しが可能
+    
+     function eventA() {
+   alert("onclickイベントが発火しました");
+ }
+ 
+ function eventB() {
+   alert("oninputイベントが発火しました");
+ }
+ 
+ function eventC() {
+   alert("onmouseoutイベントが発火しました");
+ }
+ 
+ function eventD() {
+   alert("onmouseoverイベントが発火しました");
+ }

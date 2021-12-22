@@ -13,6 +13,13 @@
          <script>
           javascriptのコードを記述をします
          </script>
+         
+       <div>
+        <button class="button" onclick=eventA();>ボタンを押下でイベント発火</button>
+        <input class="input" type=text oninput=eventB(); placeholder="ここに文字を入力する度にイベント発火">
+        <div class="block_a" onmouseout=eventC();>この要素からマウスが離れてイベント発火</div>
+        <div class="block_b" onmouseover=eventD();>この要素にマウスが乗ってイベント発火</div>
+       </div>
  
         <script type="text/javascript" src="読み込むJavaScriptファイルまでのパス" charset="utf-8"></script>
       </body>
