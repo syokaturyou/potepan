@@ -266,3 +266,7 @@
  function eventD() {
    alert("onmouseoverイベントが発火しました");
  }
+ 
+    //  $(document).ready(function(){
+    //   ここにjQueryの処理を書く
+    // });
