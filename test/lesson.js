@@ -285,10 +285,34 @@
       });
  
       $(".buttonB").click(function() {
-      $(".target_textB").text("文章が変更された！"); //テキストを変更する処理です。
+       $(".target_textB").text("文章が変更された！"); //テキストを変更する処理です。
       });
  
       $(".buttonC").click(function() {
-      $(".target_textB").text("文章が変わったぞ！"); //テキストを変更する処理です。
+       $(".target_textB").text("文章が変わったぞ！"); //テキストを変更する処理です。
      });
   });
+  
+  
+   $(document).ready(function(){
+   $("#boxA").mouseover(function() {
+     $("#boxA").css("background-color", "red"); //背景色を赤に変更する処理です。
+   });
+ 
+   $("#boxB").mouseout(function() {
+     $(this).css("background-color", "blue"); //背景色を青に変更する処理です。
+   });
+ 
+   $("#boxC").hover(
+     function() {
+       $(this).css("font-size", "30px"); //フォントサイズを30pxにします
+     },
+     function(){
+       $(this).css("font-size", "8px"); //フォントサイズを14pxにします
+     }
+   );
+ 
+   $(".boxD").mouseover(function() {
+     $("#boxA,#boxB").css("background-color", "white"); //背景色を白に変更する処理です。
+   });
+ });
