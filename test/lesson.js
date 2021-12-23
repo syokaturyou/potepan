@@ -316,3 +316,30 @@
      $("#boxA,#boxB").css("background-color", "white"); //背景色を白に変更する処理です。
    });
  });
+ 
+ 
+    //  $(セレクタ).addClass("追加するクラス名 追加するクラス名 ..."); //それぞれのクラス名は半角スペースを開けること
+    // $(セレクタ).removeClass("取り除くクラス名 取り除くクラス名 ..."); //それぞれのクラス名は半角スペースを開けること
+    
+    
+    
+ $("h1").addClass("new_class"); //処理の部分のみ記載しています。
+ 
+ 
+  $(document).ready(function(){
+   $(".button_a").click(function() {
+     $(".box_a").addClass("add_color_yellow"); //クラスの追加の処理です。
+   });
+ 
+   $(".button_b").click(function() {
+     $(".box_a").removeClass("add_color_yellow"); //クラスの削除の処理です。
+   });
+ 
+   $(".button_c").click(function() {
+     $(".box_b").addClass("add_hidden"); //display: none:のクラスを追加する処理です。
+   });
+ 
+   $(".button_d").click(function() {
+     $(".box_b").removeClass("add_hidden"); //display: none:のクラスを削除する処理です。
+   });
+ });
