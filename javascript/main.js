@@ -6,28 +6,28 @@
       });
  
       $(".button1").click(function() {
-      let value = 10 * value + $(".button1").text(); 
-       $(".target").text(value); 
+      let value = 1;
+      $(".target").text(value); 
       });
       
       $(".button2").click(function() {
-      let value = 10 * value + $(".button2").text(); 
+      let value = 2; 
        $(".target").text(value); 
       });
  
       $(".button3").click(function() {
-      let value = 10 * value + $(".button3").text(); 
+      let value = 3;
        $(".target").text(value); 
       });
  
       $(".button4").click(function() {
-      let value = $(".button4").text(); 
+      let value = 4; 
        $(".target").text(value); 
       });
       
       $(".button5").click(function() {
-      let value = $(".button5").text(); 
-       $(".target").text(value); 
+      let value = $(".button5").number(); 
+       $(".target").number(value); 
       });
  
       $(".button6").click(function() {
