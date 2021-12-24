@@ -285,11 +285,11 @@
       });
  
       $(".buttonB").click(function() {
-       $(".target_textB").text("文章が変更された！"); //テキストを変更する処理です。
+       $(".target_textB").text("文章が変更されたa！"); //テキストを変更する処理です。
       });
  
       $(".buttonC").click(function() {
-       $(".target_textB").text("文章が変わったぞ！"); //テキストを変更する処理です。
+       $(".target_textB").text("文章が変わdったぞ！"); //テキストを変更する処理です。
      });
   });
   

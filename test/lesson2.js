@@ -5,7 +5,7 @@
       });
  
       $(".buttonB").click(function() {
-      $(".target_textB").text("文章が変更された！"); //テキストを変更する処理です。
+      $(".target_textB").text("文章が変更されaた！"); //テキストを変更する処理です。
       });
  
       $(".buttonC").click(function() {
