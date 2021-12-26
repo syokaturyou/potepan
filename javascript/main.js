@@ -1,3 +1,4 @@
+let value = 0
 
      $(document).ready(function(){
       $(".button0").click(function() {
@@ -6,12 +7,14 @@
       });
  
       $(".button1").click(function() {
-      let value = 1;
+      let value1 = 1;
+      let value = value + value1
       $(".target").text(value); 
       });
       
       $(".button2").click(function() {
-      let value = 2; 
+      let value2 = 2; 
+      let value = value + value2
        $(".target").text(value); 
       });
  
