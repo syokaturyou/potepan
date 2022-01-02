@@ -1,5 +1,3 @@
-let value = 0
-
      $(document).ready(function(){
       $(".button0").click(function() {
       let value = $(".button0").text(); //テキストを取得し変数に入れています
