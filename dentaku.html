@@ -2,7 +2,6 @@
     <html lang="en">
       <head>
         <meta charset="utf-8">
-        <!--<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  -->
         <link rel="stylesheet" href="css/main.css">
         <title>電卓</title>
         <script src="javascript/jquery.min.js"></script>
@@ -10,37 +9,68 @@
       </head>
  
       <body>
-        <h2>電卓</h2>
-        
+        <form name="dentaku">
+        <h2>電卓(eval使用)</h2>
           <table>
           <tr>
-            <!--<h4 class="target">0</h4>-->
-            <input type="text" class="display" name="display" value="0" disabled>
+            <input type="button" class="display" name="display" value="" disabled>
           </tr>
           <tr>
-            <th><input type="button" value="7"></input></th>
-            <th><input type="button" value="8"></input></th>
-            <th><input type="button" value="9"></input></th>
-            <th><input type="button" class="plus" value="+"></th>
+            <th><input type="button" value="7" onclick="get_calc(this)"></th>
+            <th><input type="button" value="8" onclick="get_calc(this)"></th>
+            <th><input type="button" value="9" onclick="get_calc(this)"></th>
+            <th><input type="button" class="operator" value="+" onclick="get_calc(this)"></th>
           </tr>
           <tr>
-            <th><input type="button" value="4"></input></th>
-            <th><input type="button" value="5"></input></th>
+            <th><input type="button" value="4" onclick="get_calc(this)"></th>
+            <th><input type="button" value="5" onclick="get_calc(this)"></th>
+            <th><input type="button" value="6" onclick="get_calc(this)"></input></th>
+            <th><input type="button" class="operator" value="-" onclick="get_calc(this)"></th>
+          </tr>
+          <tr>
+            <th><input type="button" value="1" onclick="get_calc(this)"></th>
+            <th><input type="button" value="2" onclick="get_calc(this)"></th>
+            <th><input type="button" value="3" onclick="get_calc(this)"></th>
+            <th><input type="button" class="operator" value="*" name="multi_btn" onclick="get_calc(this)"></th>
+          </tr>
+          <tr>
+            <th><input type="button" value="0" onclick="get_calc(this)"></th>
+            <th><input type="button" class="ac" value="AC" onclick="get_calc(this)"></th>
+            <th><input type="button" class="equal" value="=" onclick="get_calc(this)"></th>
+            <th><input type="button" class="operator" value="/" name="div_btn" onclick="get_calc(this)"></th>
+          </tr>
+        </table>
+        </form>
+        
+        
+        <h2>電卓(別のやり方)</h2>
+        <table>
+          <tr>
+            <input type="button" class="display" name="display" value="" disabled>
+          </tr>
+          <tr>
+            <th><input type="button" value="7"></th>
+            <th><input type="button" value="8"></th>
+            <th><input type="button" value="9"></th>
+            <th><input type="button" class="operator" value="+"></th>
+          </tr>
+          <tr>
+            <th><input type="button" value="4"></th>
+            <th><input type="button" value="5"></th>
             <th><input type="button" value="6"></input></th>
-            <th><input type="button" class="minus" value="-"></th>
+            <th><input type="button" class="operator" value="-"></th>
           </tr>
           <tr>
-            <th><input type="button" value="1"></input></th>
-            <th><input type="button" value="2"></input></th>
-            <th><input type="button" value="3"></input></th>
-            <th><input type="button" class="kakeru" value="×"></th>
+            <th><input type="button" value="1"></th>
+            <th><input type="button" value="2"></th>
+            <th><input type="button" value="3"></th>
+            <th><input type="button" class="operator" value="*" name="multi_btn"></th>
           </tr>
           <tr>
-            <th><input type="button" value="0"></input></th>
+            <th><input type="button" value="0"></th>
             <th><input type="button" class="ac" value="AC"></th>
             <th><input type="button" class="equal" value="="></th>
-            <!--<th><input type="button" value="."></input></th>-->
-            <th><input type="button" class="waru" value="/"></th>
+            <th><input type="button" class="operator" value="/" name="div_btn"></th>
           </tr>
         </table>
         

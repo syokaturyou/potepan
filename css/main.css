@@ -17,16 +17,8 @@ table{
       background: black;
       color: white;
 }
-.plus{
-    background-color: lightgreen;
-}
-.minus{
-    background-color: lightgreen;
-}
-.kakeru{
-    background-color: lightgreen;
-}
-.waru{
+
+.operator{
     background-color: lightgreen;
 }
 .equal{

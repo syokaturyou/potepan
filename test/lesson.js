@@ -326,7 +326,8 @@
  $("h1").addClass("new_class"); //処理の部分のみ記載しています。
  
  
-  $(document).ready(function(){
+  $(document).ready(
+   function(){
    $(".button_a").click(function() {
      $(".box_a").addClass("add_color_yellow"); //クラスの追加の処理です。
    });
