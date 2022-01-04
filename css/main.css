@@ -1,44 +1,38 @@
 table{
   background-color: white;
 }
-
-h4{
-  width: 300px;
-  color: white;
-  background-color: black;
-}
-
+/*h4{*/
+/*  width: 300px;*/
+/*  color: white;*/
+/*  background-color: black;*/
+/*}*/
  input {
   padding: 10px 30px;
+  border-radius: 5px;
 }
 
+.display {
+      width: 250px;
+      text-align: right; /* 文字を右詰めに */
+      background: black;
+      color: white;
+}
 .plus{
     background-color: lightgreen;
-    /*padding: 10px 30px;*/
 }
-
 .minus{
     background-color: lightgreen;
-    /*padding: 10px 30px;*/
 }
-
 .kakeru{
     background-color: lightgreen;
-    /*padding: 10px 30px;*/
 }
-
 .waru{
     background-color: lightgreen;
-    /*padding: 10px 30px;*/
 }
-
 .equal{
-    background-color: lightblue;
-    /*padding: 10px 30px;*/
+    background-color: gray;
 }
-
 .ac{
     background-color: lightblue;
-    /*padding: 10px 30px;*/
 }
 
