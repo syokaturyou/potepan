@@ -10,21 +10,25 @@ table{
   padding: 10px 30px;
   border-radius: 5px;
 }
+ button{
+  padding: 10px 25px;
+  border-radius: 5px;
+ }
 
-.display {
-      width: 250px;
-      text-align: right; /* 文字を右詰めに */
-      background: black;
-      color: white;
+ .display {
+  width: 250px;
+  text-align: right; /* 文字を右詰めに */
+  background: black;
+  color: white;
 }
 
-.operator{
-    background-color: lightgreen;
+ .operator{
+  background-color: lightgreen;
 }
-.equal{
-    background-color: gray;
+ .equal{ 
+  background-color: gray;
 }
-.ac{
-    background-color: lightblue;
+ .ac{
+  background-color: lightblue;
 }
 

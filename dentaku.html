@@ -48,30 +48,41 @@
           <tr>
             <input type="button" class="display" name="display" value="" disabled>
           </tr>
+          <!--<tr>-->
+          <!--  <th><button onclick="document.querySelector( 'input' ).value += '1' " >1</button></th>-->
+          <!--  <th><button onclick="document.querySelector( 'input' ).value += '2' " >2</button></th>-->
+          <!--  <th><button onclick="document.querySelector( 'input' ).value += '3' " >3</button></th>-->
+          <!--  <th><button onclick="document.querySelector( 'input' ).value = '' " >CLR</button></th>-->
           <tr>
-            <th><input type="button" value="7"></th>
-            <th><input type="button" value="8"></th>
-            <th><input type="button" value="9"></th>
-            <th><input type="button" class="operator" value="+"></th>
+            <th><button onclick="append( '1' )" >1</button></th>
+            <th><button onclick="append( '2' )" >2</button></th>
+            <th><button onclick="append( '3' )" >3</button></th>
+            <th><button onclick="append( '+' )" >+</button></th>
           </tr>
           <tr>
-            <th><input type="button" value="4"></th>
-            <th><input type="button" value="5"></th>
-            <th><input type="button" value="6"></input></th>
-            <th><input type="button" class="operator" value="-"></th>
+            <th><button onclick="append( '4' )" >4</button></th>
+            <th><button onclick="append( '5' )" >5</button></th>
+            <th><button onclick="append( '6' )" >6</button></th>
+            <th><button onclick="append( '-' )" >-</button></th>
           </tr>
           <tr>
-            <th><input type="button" value="1"></th>
-            <th><input type="button" value="2"></th>
-            <th><input type="button" value="3"></th>
-            <th><input type="button" class="operator" value="*" name="multi_btn"></th>
+            <th><button onclick="append( '7' )" >7</button></th>
+            <th><button onclick="append( '8' )" >8</button></th>
+            <th><button onclick="append( '9' )" >9</button></th>
+            <th><button onclick="append( '*' )" >*</button></th>
           </tr>
           <tr>
-            <th><input type="button" value="0"></th>
-            <th><input type="button" class="ac" value="AC"></th>
-            <th><input type="button" class="equal" value="="></th>
-            <th><input type="button" class="operator" value="/" name="div_btn"></th>
+            <th><button onclick="append( '0' )" >0</button></th>
+            <th><button onclick="append( '.' )" >.</button></th>
+            <th></th>
+            <th><button onclick="append( '/' )" >/</button></th>
           </tr>
+          <tr>
+            <th><button onclick="append( '**' )" >^</button></th>
+            <th><button onclick="append( '**0.5' )" >√</button></th>
+            <th><button onclick="calc()" >=</button></th>
+          </tr>
+          
         </table>
         
       </body>
