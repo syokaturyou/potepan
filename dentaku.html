@@ -46,13 +46,8 @@
         <h2>電卓(別のやり方)</h2>
         <table>
           <tr>
-            <input type="button" class="display" name="display" value="" disabled>
+             <input style="font-size: 28px; text-align: right;" /><br />
           </tr>
-          <!--<tr>-->
-          <!--  <th><button onclick="document.querySelector( 'input' ).value += '1' " >1</button></th>-->
-          <!--  <th><button onclick="document.querySelector( 'input' ).value += '2' " >2</button></th>-->
-          <!--  <th><button onclick="document.querySelector( 'input' ).value += '3' " >3</button></th>-->
-          <!--  <th><button onclick="document.querySelector( 'input' ).value = '' " >CLR</button></th>-->
           <tr>
             <th><button onclick="append( '1' )" >1</button></th>
             <th><button onclick="append( '2' )" >2</button></th>
@@ -78,9 +73,10 @@
             <th><button onclick="append( '/' )" >/</button></th>
           </tr>
           <tr>
-            <th><button onclick="append( '**' )" >^</button></th>
-            <th><button onclick="append( '**0.5' )" >√</button></th>
+            <!--<th><button onclick="append( '**' )" >^</button></th>-->
+            <!--<th><button onclick="append( '**0.5' )" >√</button></th>-->
             <th><button onclick="calc()" >=</button></th>
+            <th><button onclick="update( '' ) " >CLR</button></th>
           </tr>
           
         </table>
