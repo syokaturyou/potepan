@@ -16,14 +16,3 @@ table{
   background: black;
   color: white;
 }
-
- .operator{
-  background-color: lightgreen;
-}
- .equal{ 
-  background-color: gray;
-}
- .ac{
-  background-color: lightblue;
-}
-

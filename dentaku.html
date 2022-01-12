@@ -9,61 +9,55 @@
       </head>
  
       <body>
-        
         <form name="dentaku">
-        <h2>電卓</h2>
+        <h2>電卓(2通り用意)</h2>
         <table>
           <tr>
-             <!--<input style="text-align: right;" /><br />-->
              <input type="button" class="display" name="display" value="" disabled>
           </tr>
           <tr>
-            <!--<th><button onclick="append( '1' )" >1</button></th>-->
-            <!--<th><button onclick="append( '2' )" >2</button></th>-->
-            <!--<th><button onclick="append( '3' )" >3</button></th>-->
-            <!--<th><button onclick="append( '+' )" >+</button></th>-->
-            <th><input type="button" value="1" onclick="append(this)"></th>
-            <th><input type="button" value="2" onclick="append(this)"></th>
-            <th><input type="button" value="3" onclick="append(this)"></th>
-            <th><input type="button" value="+" onclick="append(this)"></th>
+            <th><input type="button" value="1" onclick="append( '1' )" ></th>
+            <th><input type="button" value="2" onclick="append( '2' )" ></th>
+            <th><input type="button" value="3" onclick="append( '3' )" ></th>
+            <th><input type="button" value="+" onclick="append( '+' )" ></th>
+            <!--<th><input type="button" value="1" onclick="append(this)"></th>-->
+            <!--<th><input type="button" value="2" onclick="append(this)"></th>-->
+            <!--<th><input type="button" value="3" onclick="append(this)"></th>-->
+            <!--<th><input type="button" value="+" onclick="append(this)"></th>-->
           </tr>
           <tr>
-            <!--<th><button onclick="append( '4' )" >4</button></th>-->
-            <!--<th><button onclick="append( '5' )" >5</button></th>-->
-            <!--<th><button onclick="append( '6' )" >6</button></th>-->
-            <!--<th><button onclick="append( '-' )" >-</button></th>-->
-            <th><input type="button" value="4" onclick="append(this)"></th>
-            <th><input type="button" value="5" onclick="append(this)"></th>
-            <th><input type="button" value="6" onclick="append(this)"></th>
-            <th><input type="button" value="-" onclick="append(this)"></th>
+            <th><input type="button" value="4" onclick="append( '4' )" ></th>
+            <th><input type="button" value="5" onclick="append( '5' )" ></th>
+            <th><input type="button" value="6" onclick="append( '6' )" ></th>
+            <th><input type="button" value="-" onclick="append( '-' )" ></th>
+            <!--<th><input type="button" value="4" onclick="append(this)"></th>-->
+            <!--<th><input type="button" value="5" onclick="append(this)"></th>-->
+            <!--<th><input type="button" value="6" onclick="append(this)"></th>-->
+            <!--<th><input type="button" value="-" onclick="append(this)"></th>-->
           </tr>
           <tr>
-            <!--<th><button onclick="append( '7' )" >7</button></th>-->
-            <!--<th><button onclick="append( '8' )" >8</button></th>-->
-            <!--<th><button onclick="append( '9' )" >9</button></th>-->
-            <!--<th><button onclick="append( '*' )" >*</button></th>-->
-            <th><input type="button" value="7" onclick="append(this)"></th>
-            <th><input type="button" value="8" onclick="append(this)"></th>
-            <th><input type="button" value="9" onclick="append(this)"></th>
-            <th><input type="button" value="*" onclick="append(this)"></th>
+            <th><input type="button" value="7" onclick="append( '7' )" ></th>
+            <th><input type="button" value="8" onclick="append( '8' )" ></th>
+            <th><input type="button" value="9" onclick="append( '9' )" ></th>
+            <th><input type="button" value="*" onclick="append( '*' )" ></th>
+            <!--<th><input type="button" value="7" onclick="append(this)"></th>-->
+            <!--<th><input type="button" value="8" onclick="append(this)"></th>-->
+            <!--<th><input type="button" value="9" onclick="append(this)"></th>-->
+            <!--<th><input type="button" value="*" onclick="append(this)"></th>-->
           </tr>
           <tr>
-            <!--<th><button onclick="append( '0' )" >0</button></th>-->
-            <!--<th><button onclick="append( '.' )" >.</button></th>-->
-            <!--<th></th>-->
-            <!--<th><button onclick="append( '/' )" >/</button></th>-->
-            <th><input type="button" value="0" onclick="append(this)"></th>
-            <th><input type="button" value="." onclick="append(this)"></th>
-            <th></th>
-            <th><input type="button" value="/" onclick="append(this)"></th>
+            <th><input type="button" value="0" onclick="append( '0' )"></th>
+            <th><input type="button" value="." onclick="append( '.' )"></th>
+            <th><input type="button" value="AC" onclick="update( '' )"></th>
+            <th><input type="button" value="/" onclick="append( '/' )"></th>
+            <!--<th><input type="button" value="0" onclick="append(this)"></th>-->
+            <!--<th><input type="button" value="." onclick="append(this)"></th>-->
+            <!--<th><input type="button" value="AC" onclick="update(this)"></th>-->
+            <!--<th><input type="button" value="/" onclick="append(this)"></th>-->
           </tr>
           <tr>
-            <!--<th><button onclick="calc()" >=</button></th>-->
-            <!--<th><button onclick="update( '' ) " >AC</button></th>-->
-            <th><input type="button" value="=" onclick="calc(this)"></th>
-            <th><input type="button" value="AC" onclick="update(this)"></th>
+            <th><input type="button" value="=" onclick="calc()"></th>
           </tr>
-          
         </table>
         </form>
         
