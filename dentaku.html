@@ -42,42 +42,62 @@
         <!--</table>-->
         <!--</form>-->
         
-        
-        <h2>電卓(別のやり方)</h2>
+        <form name="dentaku">
+        <h2>電卓</h2>
         <table>
           <tr>
-             <input style="font-size: 28px; text-align: right;" /><br />
+             <input style="text-align: right;" /><br />
+             <input type="button" class="display" name="display" value="" disabled>
           </tr>
           <tr>
-            <th><button onclick="append( '1' )" >1</button></th>
-            <th><button onclick="append( '2' )" >2</button></th>
-            <th><button onclick="append( '3' )" >3</button></th>
-            <th><button onclick="append( '+' )" >+</button></th>
+            <!--<th><button onclick="append( '1' )" >1</button></th>-->
+            <!--<th><button onclick="append( '2' )" >2</button></th>-->
+            <!--<th><button onclick="append( '3' )" >3</button></th>-->
+            <!--<th><button onclick="append( '+' )" >+</button></th>-->
+            <th><input type="button" value="1" onclick="get_calc(this)"></th>
+            <th><input type="button" value="2" onclick="get_calc(this)"></th>
+            <th><input type="button" value="3" onclick="get_calc(this)"></th>
+            <th><input type="button" value="+" onclick="get_calc(this)"></th>
           </tr>
           <tr>
-            <th><button onclick="append( '4' )" >4</button></th>
-            <th><button onclick="append( '5' )" >5</button></th>
-            <th><button onclick="append( '6' )" >6</button></th>
-            <th><button onclick="append( '-' )" >-</button></th>
+            <!--<th><button onclick="append( '4' )" >4</button></th>-->
+            <!--<th><button onclick="append( '5' )" >5</button></th>-->
+            <!--<th><button onclick="append( '6' )" >6</button></th>-->
+            <!--<th><button onclick="append( '-' )" >-</button></th>-->
+            <th><input type="button" value="4" onclick="get_calc(this)"></th>
+            <th><input type="button" value="5" onclick="get_calc(this)"></th>
+            <th><input type="button" value="6" onclick="get_calc(this)"></th>
+            <th><input type="button" value="-" onclick="get_calc(this)"></th>
           </tr>
           <tr>
-            <th><button onclick="append( '7' )" >7</button></th>
-            <th><button onclick="append( '8' )" >8</button></th>
-            <th><button onclick="append( '9' )" >9</button></th>
-            <th><button onclick="append( '*' )" >*</button></th>
+            <!--<th><button onclick="append( '7' )" >7</button></th>-->
+            <!--<th><button onclick="append( '8' )" >8</button></th>-->
+            <!--<th><button onclick="append( '9' )" >9</button></th>-->
+            <!--<th><button onclick="append( '*' )" >*</button></th>-->
+            <th><input type="button" value="7" onclick="get_calc(this)"></th>
+            <th><input type="button" value="8" onclick="get_calc(this)"></th>
+            <th><input type="button" value="9" onclick="get_calc(this)"></th>
+            <th><input type="button" value="*" onclick="get_calc(this)"></th>
           </tr>
           <tr>
-            <th><button onclick="append( '0' )" >0</button></th>
-            <th><button onclick="append( '.' )" >.</button></th>
+            <!--<th><button onclick="append( '0' )" >0</button></th>-->
+            <!--<th><button onclick="append( '.' )" >.</button></th>-->
+            <!--<th></th>-->
+            <!--<th><button onclick="append( '/' )" >/</button></th>-->
+            <th><input type="button" value="0" onclick="get_calc(this)"></th>
+            <th><input type="button" value="." onclick="get_calc(this)"></th>
             <th></th>
-            <th><button onclick="append( '/' )" >/</button></th>
+            <th><input type="button" value="/" onclick="get_calc(this)"></th>
           </tr>
           <tr>
-            <th><button onclick="calc()" >=</button></th>
-            <th><button onclick="update( '' ) " >CLR</button></th>
+            <!--<th><button onclick="calc()" >=</button></th>-->
+            <!--<th><button onclick="update( '' ) " >AC</button></th>-->
+            <th><input type="button" value="=" onclick="get_calc(this)"></th>
+            <th><input type="button" value="AC" onclick="get_update(this)"></th>
           </tr>
           
         </table>
+        </form>
         
       </body>
     </html>

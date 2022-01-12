@@ -1,7 +1,4 @@
-
-
  "use strict";
- 
 window.addEventListener( "DOMContentLoaded" , ()=> {
     /**
      * @param watchCallBack 経過時間報告用コールバック

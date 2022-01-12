@@ -1,26 +1,37 @@
-  function update( _v ) {
-        document.querySelector( 'input' ).value = _v // input tag を更新する関数
-    }
-  function append( _v ) {
-        document.querySelector( 'input' ).value += _v // 数字ボタンが押されたので数字を後ろに追加する
-    }
-  function calc() {
-        const v = document.querySelector( 'input' ).value // 「＝」ボタンが押されたので計算する
-    try {
-        const f = new Function( 'return ' + v )
-        update( f().toString() )
-        } catch( _error ) {
-          update( _error ) // 計算に失敗した場合は、そのエラーの内容を表示する
-        }
+  // 　function update( _v ) {
+  //       document.querySelector( 'input' ).value = _v // 「AC」ボタン押下時にinput tag を更新する関数
+  //   }function append( _v ) {　　　　　　　　　　　　　// 数字ボタンが押されたので数字を後ろに追加する
+  //       document.querySelector( 'input' ).value += _v 
+  //   }function calc() {　　　　　　　　　　　　　　　　　// 「＝」ボタン押下時に計算
+  //       let v = document.querySelector( 'input' ).value 
+  //       let f = new Function( 'return ' + v )
+  //       update(f().toString())
+  //   }
+    
+    function get_calc(btn) {
+      if(btn.value == "=") {
+        document.dentaku.display.value = eval(document.dentaku.display.value);
+      } else {
+        document.dentaku.display.value += btn.value;
+      }
+    };  
+    
+    function get_update(btn) {
+      document.dentaku.display.value = "";
     }
     
     
-      //  function get_calc(btn) {
+    // function calc(btn) {
     //   if(btn.value == "=") {
     //     document.dentaku.display.value = eval(document.dentaku.display.value);
-    //   } else if (btn.value == "AC") {
-    //     document.dentaku.display.value = "";
     //   } else {
     //     document.dentaku.display.value += btn.value;
     //   }
-    // };  
+    // };
+    // // function append(btn) {
+    // //   document.dentaku.display.value += btn.value;
+    // // }
+    // function update(btn) {
+    //   document.dentaku.display.value = "";
+    // }
+    
