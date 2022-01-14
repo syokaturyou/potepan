@@ -10,17 +10,18 @@
     var elapsedTime = 0; //経過時刻更新用 初期値0
     var teisi; //タイマーを止めるためにclearTimeoutを使う必要があり、そのための変数用意
     var timeToadd = 0; //タイマー再開時に0にさせないための関数
-
+    
     function updateTimeText(){
         var m = Math.floor(elapsedTime / 60000); 
         var s = Math.floor(elapsedTime % 60000 / 1000); 
-        var ms = elapsedTime % 1000; 
+        var ms = elapsedTime % 10; 
         // 桁数調整
         m = ('0' + m).slice(-2); 
         s = ('0' + s).slice(-2);
-        ms = ('0' + ms).slice(-3);
-        timer.textContent = m + ':' + s + ':' + ms; //変数timerに表示　
+        ms = ('0' + ms).slice(-1);
+        timer.textContent = m  + ':' + s + ':' + ms;　//変数timerに表示　
     }
+    
 
     function countUp(){
         //teisi変数はsetTimeoutの返り値になるので代入する
@@ -36,6 +37,33 @@
         startTime = Date.now();
         countUp();
     });
+    
+    
+    
+//     function startBtn1(){
+//     // const startinput = document.getElementById('start');
+//     // startinput.disabled = true;
+//     const stopinput = document.getElementById('stop');
+//     stopinput.disabled = true;
+//     const resetinput = document.getElementById('reset');
+//     resetinput.disabled = true;
+//     if ( document.getElementById("stop").disabled === true ){
+// 		// disabled属性を削除
+// 		stopinput.disabled = false;
+// 		resetinput.disabled = false;
+// 		document.getElementById('stop').removeAttribute("disabled");
+// 		document.getElementById("stop").style.color = "black";
+// 		document.getElementById('reset').removeAttribute("disabled");
+// 		document.getElementById('reset').style.color = "black";
+// 	}else{
+// 		// disabled属性を設定
+// 		stopinput.disabled = true;
+// 		resetinput.disabled = true;
+// 		document.getElementById('start').setAttribute("disabled", true);
+// 		document.getElementById('start').style.color = "White";
+// 	 }
+//     }
+    
 
     //ストップボタン押下時のイベント追加
     stop.addEventListener('click',function(){
