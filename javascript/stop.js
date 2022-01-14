@@ -1,17 +1,17 @@
 (function(){
-    //htmlのidを関数に指定
+    //htmlファイルのidを定義
     var timer = document.getElementById('timer');
     var start = document.getElementById('start');
     var stop = document.getElementById('stop');
     var reset = document.getElementById('reset');
 
    // jsファイル内で定義
-    var startTime; //クリック時の時間を保持するため変数
+    var startTime; //開始ボタン押下時変数
     var elapsedTime = 0; //経過時刻更新用 初期値0
-    var timerId; //タイマーを止めるにはclearTimeoutを使う必要があり、そのためにはclearTimeoutの引数に渡すためのタイマーのidが必要
-    var timeToadd = 0; //タイマー再開時にさせたら0にさせないための関数
+    var teisi; //タイマーを止めるためにclearTimeoutを使う必要があり、そのための変数用意
+    var timeToadd = 0; //タイマー再開時に0にさせないための関数
 
-    function updateTimetText(){
+    function updateTimeText(){
         var m = Math.floor(elapsedTime / 60000); 
         var s = Math.floor(elapsedTime % 60000 / 1000); 
         var ms = elapsedTime % 1000; 
@@ -22,33 +22,48 @@
         timer.textContent = m + ':' + s + ':' + ms; //変数timerに表示　
     }
 
-    //再帰的使用するための関数
     function countUp(){
-        //timerId変数はsetTimeoutの返り値になるので代入する
-        timerId = setTimeout(function(){
-            elapsedTime = Date.now() - startTime + timeToadd; //経過時刻は現在時刻をミリ秒で示すDate.now()からstartを押した時の時刻(startTime)を引く
-            updateTimetText()
-            countUp(); //countUp関数自身を呼ぶことで10ミリ秒毎に以下の計算を始める
-        //1秒以下の時間を表示するために10ミリ秒後に始めるよう宣言
-        },10);
+        //teisi変数はsetTimeoutの返り値になるので代入する
+        teisi = setTimeout(function(){
+            elapsedTime = Date.now() - startTime + timeToadd; //現在時刻を示すDate.now()からstartTimeを引いて経過時間表示
+            updateTimeText()
+            countUp(); //countUp関数を入れることでカウント中の時間も表示できる
+        });
     }
 
-    //startボタンにクリック時のイベントを追加(タイマースタートイベント)
+    //開始ボタン押下時のイベント追加
     start.addEventListener('click',function(){
         startTime = Date.now();
         countUp();
     });
 
+    //停止ボタン押下時のイベント追加
     stop.addEventListener('click',function(){
-       clearTimeout(timerId); 
+       clearTimeout(teisi); 
         //タイマーに表示される時間elapsedTimeが現在時刻からスタートボタンを押した時刻を引いた
        timeToadd += Date.now() - startTime;
     });
 
-    //resetボタンにクリック時のイベントを追加(タイマーリセットイベント)
+    //リセットボタン押下時のイベント追加
     reset.addEventListener('click',function(){
-        elapsedTime = 0; //経過時刻を更新するための変数elapsedTimeを0にしてあげつつ、updateTimetTextで0になったタイムを表示。
-        timeToadd = 0;         //リセット時0に初期化
-        updateTimetText(); //updateTimetTextで0になったタイムを表示
+        elapsedTime = 0;   //経過時刻を更新するための変数elapsedTimeを0にしてあげつつ、updateTimetTextで0になったタイムを表示。
+        timeToadd = 0;     //リセット時0に
+        updateTimeText(); //updateTimetTextで0になったタイムを表示
     });
+    
 })();
+
+// // 使用メソッド,関数
+// var //定義
+// document //htmlの記述を読みこむ
+// textContent //内容を出力
+// Math.floor() //与えられた数値以下の最大の整数を返す
+// slice //
+// setTimeout // 一定時間後に一度だけ特定の処理をおこなう
+// clearTimeout() // 
+// Date.now() //
+// countUp() // カウント用関数
+// update //
+// start //
+// stop //
+// reset //リセット
