@@ -6,7 +6,7 @@
     var reset = document.getElementById('reset');
 
    // jsファイル内で定義
-    var startTime; //開始ボタン押下時変数
+    var startTime; //スタートボタン押下時変数
     var elapsedTime = 0; //経過時刻更新用 初期値0
     var teisi; //タイマーを止めるためにclearTimeoutを使う必要があり、そのための変数用意
     var timeToadd = 0; //タイマー再開時に0にさせないための関数
@@ -31,13 +31,13 @@
         });
     }
 
-    //開始ボタン押下時のイベント追加
+    //スタートボタン押下時のイベント追加
     start.addEventListener('click',function(){
         startTime = Date.now();
         countUp();
     });
 
-    //停止ボタン押下時のイベント追加
+    //ストップボタン押下時のイベント追加
     stop.addEventListener('click',function(){
        clearTimeout(teisi); 
         //タイマーに表示される時間elapsedTimeが現在時刻からスタートボタンを押した時刻を引いた
@@ -50,7 +50,6 @@
         timeToadd = 0;     //リセット時0に
         updateTimeText(); //updateTimetTextで0になったタイムを表示
     });
-    
 })();
 
 // // 使用メソッド,関数
