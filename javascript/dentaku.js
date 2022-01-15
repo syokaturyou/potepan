@@ -1,8 +1,9 @@
     // 数字ボタン押下時処理
     function number(btn) {                       
-      document.dentaku.display.value += btn.value;
-      if ( document.dentaku.display.value == 0){  //最初に「0」を押せないようnullにする
-         document.dentaku.display.value = null; 
+      if ( document.dentaku.display.value == 0 && document.dentaku.display.value.endsWith(0)){  //「0」の後に数字を押せないようにする
+         document.dentaku.display.value += ""; 
+      }else{
+         document.dentaku.display.value += btn.value;
       }
     } 
     
@@ -31,8 +32,12 @@
     } 
     
     // 「＝」ボタン押下時に計算
-    function calc() {                         
-      document.dentaku.display.value = eval(document.dentaku.display.value);
+    function calc() {       
+      if ( document.dentaku.display.value == "" ){  //最初に「=」を押せないようにする
+        document.dentaku.display.value += "";
+      } else {
+        document.dentaku.display.value = eval(document.dentaku.display.value);
+      }
     } 
     
     // 「AC」ボタン押下時処理
