@@ -11,18 +11,20 @@
       if( document.dentaku.display.value == 0 && btn.value != "-" ){
         document.dentaku.display.value = null; //「-」以外は最初に演算子を入力できないようnullにする
       } else if( document.dentaku.display.value.endsWith("+") || document.dentaku.display.value.endsWith("-") || document.dentaku.display.value.endsWith("*") || document.dentaku.display.value.endsWith("/") ) {
-            document.dentaku.display.value += ""; //連続で演算子を入力できないようnullにする
+        document.dentaku.display.value += ""; //連続で演算子を入力できないようnullにする
+      } else if( document.dentaku.display.value.endsWith(".")){
+        document.dentaku.display.value += ""; //小数点の後は演算子を入力できないようnullにする
       } else {
-          document.dentaku.display.value += btn.value;
+        document.dentaku.display.value += btn.value;
       }
     } 
     
     // 少数点ボタン押下時処理
     function decimal(btn) {                         
-      if ( document.dentaku.display.value == 0 ){  //最初に小数点を押せないようnullにする
+      if ( document.dentaku.display.value == "" ){  //最初に小数点を押せないようnullにする
          document.dentaku.display.value += "";
-      }else if( document.dentaku.display.value.endsWith("+") || document.dentaku.display.value.endsWith("-") || document.dentaku.display.value.endsWith("*") || document.dentaku.display.value.endsWith("/") ) {
-         document.dentaku.display.value += ""; //演算子を入力後は小数点入力不可
+      }else if( document.dentaku.display.value.endsWith("+") || document.dentaku.display.value.endsWith("-") || document.dentaku.display.value.endsWith("*") || document.dentaku.display.value.endsWith("/") || document.dentaku.display.value.endsWith(".")) {
+         document.dentaku.display.value += ""; //演算子,小数点を入力後は小数点入力不可
       } else {
          document.dentaku.display.value += btn.value;
       }
@@ -39,5 +41,3 @@
     }
     
     
-    
-  
