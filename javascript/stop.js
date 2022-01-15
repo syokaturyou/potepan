@@ -2,8 +2,12 @@
     //htmlファイルのidを定義
     var timer = document.getElementById('timer');
     var start = document.getElementById('start');
-    var stop = document.getElementById('stop');
+    var stop  = document.getElementById('stop');
     var reset = document.getElementById('reset');
+    //ボタン活性/非活性関連
+    const disstart = document.getElementById("start");
+    const disstop  = document.getElementById("stop");
+    const disreset = document.getElementById("reset");
 
    // jsファイル内で定義
     var startTime; //スタートボタン押下時変数
@@ -21,7 +25,7 @@
         ms = ('0' + ms).slice(-1);
         timer.textContent = m  + ':' + s + ':' + ms;　//変数timerに表示　
     }
-
+    
     function countUp(){
         //teisi変数はsetTimeoutの返り値になるので代入する
         teisi = setTimeout(function(){
@@ -35,25 +39,28 @@
     start.addEventListener('click',function(){
         startTime = Date.now();
         countUp();
+        //ボタン活性/非活性関連
+        disstart.disabled = true;
+        disstop.disabled  = false;
+        disreset.disabled = false;
+        disstart.style.backgroundColor = "lightblue";
+        disstop.style.backgroundColor  = "#EEEEEE";
+        disreset.style.backgroundColor = "#EEEEEE";
+        // disstart.style.Color = "white";
     });
-    
-    function startBtn1(){
-    if ( document.getElementById('stop').disabled == true || document.getElementById("reset").disabled == true ){
-        // disabled属性を解除
-		document.getElementById('stop').removeAttribute('disabled');
-		document.getElementById("reset").removeAttribute("disabled");
-	}else{
-		// disabled属性を設定
-		document.getElementById("start").setAttribute("disabled", true);
-		document.getElementById("start").style.color = "White";
-	 }
-    }
     
     //ストップボタン押下時のイベント追加
     stop.addEventListener('click',function(){
        clearTimeout(teisi); 
         //タイマーに表示される時間elapsedTimeが現在時刻からスタートボタンを押した時刻を引いた
        timeToadd += Date.now() - startTime;
+       //ボタン活性/非活性関連
+       disstart.disabled = false;
+       disstop.disabled  = true;
+       disreset.disabled = false;
+       disstart.style.backgroundColor = "#EEEEEE";
+       disstop.style.backgroundColor  = "#78FF94";
+       disreset.style.backgroundColor = "#EEEEEE";
     });
 
     //リセットボタン押下時のイベント追加
@@ -61,6 +68,13 @@
         elapsedTime = 0;   //経過時刻を更新するための変数elapsedTimeを0にしてあげつつ、updateTimetTextで0になったタイムを表示。
         timeToadd = 0;     //リセット時0に
         updateTimeText(); //updateTimetTextで0になったタイムを表示
+        //ボタン活性/非活性関連
+        disstart.disabled = false;
+        disstop.disabled  = true;
+        disreset.disabled = true;
+        disstart.style.backgroundColor = "#EEEEEE";
+        disstop.style.backgroundColor  = "#EEEEEE";
+        disreset.style.backgroundColor = "#EEEEEE";
     });
 })();
 
