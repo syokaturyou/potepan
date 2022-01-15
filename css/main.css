@@ -16,3 +16,21 @@ table{
   background: black;
   color: white;
 }
+
+.twobutton{
+ min-width: 125px;
+ padding: 10px 25px;
+ border-radius: 5px;
+ background-color: #C0C0C0;
+}
+
+.twobutton:hover{
+ background-color: lightblue;
+}
+
+.enzanbutton{
+  background-color: #C0C0C0;
+}
+.enzanbutton:hover{
+  background-color: lightblue;
+}
