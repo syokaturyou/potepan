@@ -21,7 +21,6 @@
         ms = ('0' + ms).slice(-1);
         timer.textContent = m  + ':' + s + ':' + ms;　//変数timerに表示　
     }
-    
 
     function countUp(){
         //teisi変数はsetTimeoutの返り値になるので代入する
@@ -38,33 +37,18 @@
         countUp();
     });
     
+    function startBtn1(){
+    if ( document.getElementById('stop').disabled == true || document.getElementById("reset").disabled == true ){
+        // disabled属性を解除
+		document.getElementById('stop').removeAttribute('disabled');
+		document.getElementById("reset").removeAttribute("disabled");
+	}else{
+		// disabled属性を設定
+		document.getElementById("start").setAttribute("disabled", true);
+		document.getElementById("start").style.color = "White";
+	 }
+    }
     
-    
-//     function startBtn1(){
-//     // const startinput = document.getElementById('start');
-//     // startinput.disabled = true;
-//     const stopinput = document.getElementById('stop');
-//     stopinput.disabled = true;
-//     const resetinput = document.getElementById('reset');
-//     resetinput.disabled = true;
-//     if ( document.getElementById("stop").disabled === true ){
-// 		// disabled属性を削除
-// 		stopinput.disabled = false;
-// 		resetinput.disabled = false;
-// 		document.getElementById('stop').removeAttribute("disabled");
-// 		document.getElementById("stop").style.color = "black";
-// 		document.getElementById('reset').removeAttribute("disabled");
-// 		document.getElementById('reset').style.color = "black";
-// 	}else{
-// 		// disabled属性を設定
-// 		stopinput.disabled = true;
-// 		resetinput.disabled = true;
-// 		document.getElementById('start').setAttribute("disabled", true);
-// 		document.getElementById('start').style.color = "White";
-// 	 }
-//     }
-    
-
     //ストップボタン押下時のイベント追加
     stop.addEventListener('click',function(){
        clearTimeout(teisi); 
