@@ -11,8 +11,14 @@
     
  
     animals << "ライオン"
+      animals.push("wani")
  
     puts animals[0]
     puts animals[1]
     puts animals[2]
     puts animals[3]
+    puts animals[4]
+    
+    p animals
+    animals.delete_at(0)
+    p animals
