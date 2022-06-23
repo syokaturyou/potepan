@@ -1,50 +1,48 @@
-   <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/main.css">
-        <title>電卓</title>
-        <script src="javascript/jquery.min.js"></script>
-        <script type="text/javascript" src="javascript/dentaku.js" charset="utf-8"></script>
-      </head>
- 
-      <body>
-        <form name="dentaku">
-        <h2>電卓</h2>
-        <table class="dentakutable">
-          <tr>
-             <input type="button" class="display" name="display" value="">
-          </tr>
-          <tr>
-            <th><input type="button" value="1" onclick="number(this)"></th>
-            <th><input type="button" value="2" onclick="number(this)"></th>
-            <th><input type="button" value="3" onclick="number(this)"></th>
-            <th><input type="button" value="+" onclick="enzan(this)" class="enzanbutton"></th>
-          </tr>
-          <tr>
-            <th><input type="button" value="4" onclick="number(this)"></th>
-            <th><input type="button" value="5" onclick="number(this)"></th>
-            <th><input type="button" value="6" onclick="number(this)"></th>
-            <th><input type="button" value="-" onclick="enzan(this)" class="enzanbutton"></th>
-          </tr>
-          <tr>
-            <th><input type="button" value="7" onclick="number(this)"></th>
-            <th><input type="button" value="8" onclick="number(this)"></th>
-            <th><input type="button" value="9" onclick="number(this)"></th>
-            <th><input type="button" value="*" onclick="enzan(this)" class="enzanbutton"></th>
-          </tr>
-          <tr>
-            <th><input type="button" value="0" onclick="number(this)"></th>
-            <th></th>
-            <th><input type="button" value="." onclick="decimal(this)"></th>
-            <th><input type="button" value="/" onclick="enzan(this)" class="enzanbutton"></th>
-          </tr>
-          <tr>
-            <th colspan="2"><input type="button" value="=" onclick="calc()" class="twobutton"></th>
-            <th colspan="2"><input type="button" value="AC" onclick="update(this)" class="twobutton"></th>
-          </tr>
-        </table>
-        </form>
-        
-      </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>電卓</title>
+    <script src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/dentaku.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <form name="dentaku">
+      <h2>電卓</h2>
+      <table class="dentakutable">
+        <tr>
+          <input type="button" class="display" name="display" value="">
+        </tr>
+        <tr>
+          <th><input type="button" value="1" onclick="number(this)"></th>
+          <th><input type="button" value="2" onclick="number(this)"></th>
+          <th><input type="button" value="3" onclick="number(this)"></th>
+          <th><input type="button" value="+" onclick="enzan(this)" class="enzanbutton"></th>
+        </tr>
+        <tr>
+          <th><input type="button" value="4" onclick="number(this)"></th>
+          <th><input type="button" value="5" onclick="number(this)"></th>
+          <th><input type="button" value="6" onclick="number(this)"></th>
+          <th><input type="button" value="-" onclick="enzan(this)" class="enzanbutton"></th>
+        </tr>
+        <tr>
+          <th><input type="button" value="7" onclick="number(this)"></th>
+          <th><input type="button" value="8" onclick="number(this)"></th>
+          <th><input type="button" value="9" onclick="number(this)"></th>
+          <th><input type="button" value="*" onclick="enzan(this)" class="enzanbutton"></th>
+        </tr>
+        <tr>
+          <th><input type="button" value="0" onclick="number(this)"></th>
+          <th></th>
+          <th><input type="button" value="." onclick="decimal(this)"></th>
+          <th><input type="button" value="/" onclick="enzan(this)" class="enzanbutton"></th>
+        </tr>
+        <tr>
+          <th colspan="2"><input type="button" value="=" onclick="calc()" class="twobutton"></th>
+          <th colspan="2"><input type="button" value="AC" onclick="update(this)" class="twobutton"></th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
